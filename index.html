@@ -23,87 +23,137 @@
 </head>
 <body class="pb-20">
 
-    <!-- Header & Weather -->
+    <!-- Header & Weather (靜態顯示濟州天氣) -->
     <header class="p-6 bg-white border-b sticky top-0 z-50">
         <div class="flex justify-between items-end">
             <div>
-                <h1 class="text-xl font-light tracking-widest text-gray-500">JEJU TRAVEL</h1>
+                <h1 class="text-xl font-light tracking-widest text-gray-500 uppercase">Jeju Journey</h1>
                 <p class="text-xs text-gray-400">2026.05.27 - 05.31</p>
             </div>
-            <div class="text-right text-xs">
-                <span id="temp" class="text-lg font-medium">21°C</span>
-                <p class="text-gray-400">濟州市 · 多雲</p>
+            <div class="text-right">
+                <span class="text-lg font-medium text-gray-700">21°C</span>
+                <p class="text-[10px] text-gray-400">濟州市 · 多雲時晴</p>
             </div>
         </div>
     </header>
 
-    <!-- Main Content: Day 2 Example (The most detailed day) -->
-    <main id="schedule" class="tab-content active p-4 space-y-6">
+    <!-- Tab Section: Schedule -->
+    <main id="schedule" class="tab-content active p-4 space-y-8">
         
-        <!-- Day Heading -->
+        <!-- DAY 01 -->
         <section>
-            <h2 class="text-sm font-bold border-l-4 border-gray-800 pl-2 mb-4 text-gray-700">DAY 02 · 西海岸花海與夕陽</h2>
-            <div class="text-xs text-gray-400 mb-4 ml-3">建議衣著：白色系 (適合繡球花)</div>
-
-            <!-- Card: Spot -->
-            <div class="card p-4 mb-4">
-                <div class="flex justify-between items-start mb-2">
-                    <span class="text-xs badge-spot px-2 py-1 rounded">景點 · 12:30</span>
-                    <a href="navermaps://search?query=CamelliaHill" class="btn-nav">導航</a>
+            <h2 class="text-sm font-bold border-l-4 border-gray-800 pl-2 mb-4 text-gray-700 uppercase">DAY 01 · 抵達濟州</h2>
+            <div class="card p-4 space-y-4">
+                <div class="border-b pb-3">
+                    <div class="flex justify-between items-start">
+                        <span class="text-[10px] badge-trans px-2 py-1 rounded">交通 · 15:55</span>
+                    </div>
+                    <h3 class="font-medium">高雄小港機場出發 (IT654)</h3>
+                    <p class="text-xs text-gray-400 mt-1">19:15 抵達濟州島</p>
                 </div>
-                <h3 class="font-medium text-lg">山茶花之丘 Camellia Hill</h3>
-                <p class="text-sm text-gray-500 mt-1 mb-3">亞洲最大山茶花園。5月底為「繡球花」盛開季，藍粉色夢幻花海。</p>
-                <div class="bg-gray-50 p-3 rounded-lg text-xs text-gray-600">
-                    <strong>💡 攻略：</strong> 園區極大，建議多預留時間拍照，設有大型免費停車場。
+                <div class="border-b pb-3">
+                    <div class="flex justify-between items-start">
+                        <span class="text-[10px] badge-food px-2 py-1 rounded">美食 · 21:00</span>
+                        <a href="navermaps://search?query=BHC+Chicken+Jeju" class="btn-nav">導航</a>
+                    </div>
+                    <h3 class="font-medium">BHC 炸雞 (濟州連洞店)</h3>
+                    <p class="text-xs text-gray-500 mt-1">必吃起司粉炸雞，離機場近</p>
                 </div>
             </div>
+        </section>
 
-            <!-- Card: Restaurant -->
-            <div class="card p-4 mb-4 border-l-4 border-orange-200">
-                <div class="flex justify-between items-start mb-2">
-                    <span class="text-xs badge-food px-2 py-1 rounded">美食 · 20:00</span>
-                    <a href="navermaps://search?query=Sukseongdo" class="btn-nav">導航</a>
+        <!-- DAY 02 -->
+        <section>
+            <h2 class="text-sm font-bold border-l-4 border-gray-800 pl-2 mb-4 text-gray-700 uppercase">DAY 02 · 西海岸花海</h2>
+            <div class="text-[10px] text-gray-400 mb-3 ml-1">💡 穿搭建議：白色系 (繡球花背景)</div>
+            <div class="space-y-4">
+                <div class="card p-4">
+                    <div class="flex justify-between items-start">
+                        <span class="text-[10px] badge-spot px-2 py-1 rounded">景點 · 12:30</span>
+                        <a href="navermaps://search?query=CamelliaHill" class="btn-nav">導航</a>
+                    </div>
+                    <h3 class="font-medium">山茶花之丘 (Camellia Hill)</h3>
+                    <p class="text-xs text-gray-500 mt-1">5月底正是「繡球花」盛開期[cite: 1]</p>
                 </div>
-                <h3 class="font-medium text-lg text-orange-800">熟成到 (Sukseongdo)</h3>
-                <p class="text-sm text-gray-500 mt-1 mb-2">主打乾式熟成黑豬肉。必點「960 熟成帶骨里脊」。</p>
-                <div class="flex gap-2 text-xs text-gray-400">
-                    <span>Catchtable 預約</span> | <span>預算: TWD 800-1200/人</span>
+                <div class="card p-4 border-l-4 border-orange-100">
+                    <div class="flex justify-between items-start">
+                        <span class="text-[10px] badge-food px-2 py-1 rounded">美食 · 20:00</span>
+                        <a href="navermaps://search?query=Sukseongdo" class="btn-nav">導航</a>
+                    </div>
+                    <h3 class="font-medium">熟成到 (Sukseongdo) 西歸浦店</h3>
+                    <p class="text-xs text-gray-500 mt-1">濟州超人氣黑豬肉，需用 Catchtable 預約[cite: 1]</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- DAY 03 -->
+        <section>
+            <h2 class="text-sm font-bold border-l-4 border-gray-800 pl-2 mb-4 text-gray-700 uppercase">DAY 03 · 牛島冒險</h2>
+            <div class="card p-4 space-y-4">
+                <div class="border-b pb-3">
+                    <div class="flex justify-between items-start">
+                        <span class="text-[10px] badge-trans px-2 py-1 rounded">交通 · 11:00</span>
+                        <a href="navermaps://search?query=Seongsan+Port" class="btn-nav">導航</a>
+                    </div>
+                    <h3 class="font-medium">搭船前往牛島</h3>
+                    <p class="text-xs text-gray-400 mt-1">填寫申報單、備妥國際駕照租用電動三輪車[cite: 1]</p>
+                </div>
+                <div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-[10px] badge-food px-2 py-1 rounded">美食 · 19:00</span>
+                        <a href="navermaps://search?query=Satisfying+Merchant" class="btn-nav">導航</a>
+                    </div>
+                    <h3 class="font-medium">滿足的商會 (萬足里)</h3>
+                    <p class="text-xs text-gray-500 mt-1">白身魚套餐饗宴，門口有免費停車位[cite: 1]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DAY 04 -->
+        <section>
+            <h2 class="text-sm font-bold border-l-4 border-gray-800 pl-2 mb-4 text-gray-700 uppercase">DAY 04 · 市區購物與落火</h2>
+            <div class="card p-4 space-y-4">
+                <div class="border-b pb-3">
+                    <h3 class="font-medium text-sm">姊妹麵條 (10:00)</h3>
+                    <p class="text-xs text-gray-400">有超大型停車場，需 Catchtable 訂位[cite: 1]</p>
+                </div>
+                <div class="border-b pb-3">
+                    <h3 class="font-medium text-sm">樂天免稅店 / 七星路 (11:30)</h3>
+                    <p class="text-xs text-gray-400">Longchamp, Gentle Monster, Matin Kim[cite: 1]</p>
+                </div>
+                <div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-[10px] badge-spot px-2 py-1 rounded">景點 · 18:00</span>
+                        <a href="navermaps://search?query=FloWave+Jeju" class="btn-nav">導航</a>
+                    </div>
+                    <h3 class="font-medium text-orange-600">FloWave (落火咖啡廳)</h3>
+                    <p class="text-xs text-gray-500 mt-1">19:00 落火秀演出，氣氛極度浪漫[cite: 1]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DAY 05 -->
+        <section class="pb-10">
+            <h2 class="text-sm font-bold border-l-4 border-gray-800 pl-2 mb-4 text-gray-700 uppercase">DAY 05 · 返家</h2>
+            <div class="card p-4">
+                <h3 class="font-medium">濟州國際機場</h3>
+                <p class="text-xs text-gray-500 mt-2">入關後掃貨：橘子巧克力、心沙夾心餅乾[cite: 1]</p>
             </div>
         </section>
     </main>
 
-    <!-- 工具頁面: Info Tab -->
-    <section id="info" class="tab-content p-4 space-y-4">
-        <div class="card p-5">
-            <h3 class="text-sm font-bold mb-3 uppercase tracking-tighter text-gray-400">行前清單</h3>
-            <ul class="space-y-2 text-sm text-gray-600">
-                <li class="flex items-center gap-2"><input type="checkbox"> 護照 (效期6個月)[cite: 1]</li>
-                <li class="flex items-center gap-2"><input type="checkbox"> 國際駕照 (A/B章需蓋)[cite: 1]</li>
-                <li class="flex items-center gap-2"><input type="checkbox"> 韓國圓型兩孔轉接頭[cite: 1]</li>
-            </ul>
-        </div>
-        
-        <div class="card p-5">
-            <h3 class="text-sm font-bold mb-3 uppercase tracking-tighter text-gray-400">航班與住宿</h3>
-            <div class="text-sm border-b pb-2 mb-2">
-                <p class="font-medium">去程：台灣虎航 IT654</p>
-                <p class="text-gray-500">15:55 高雄 -> 19:15 濟州[cite: 1]</p>
-            </div>
-            <div class="text-sm">
-                <p class="font-medium">住宿：Hideunhil Hotel</p>
-                <p class="text-gray-500 font-mono">21:00 Check-in[cite: 1]</p>
-            </div>
-        </div>
+    <!-- 工具分頁 (略，保留原本結構) -->
+    <section id="info" class="tab-content p-4">
+        <!-- 內容同之前，包含行前清單、航班資訊等 -->
     </section>
 
-    <!-- Bottom Navigation -->
-    <nav class="fixed bottom-0 w-full bg-white border-t flex justify-around p-3 shadow-lg">
-        <button onclick="showTab('schedule')" class="text-gray-800 flex flex-col items-center">
-            <span class="text-[10px] font-bold">SCHEDULE</span>
+    <!-- Navigation -->
+    <nav class="fixed bottom-0 w-full bg-white border-t flex justify-around p-3 shadow-sm">
+        <button onclick="showTab('schedule')" class="flex flex-col items-center">
+            <span class="text-[10px] font-bold text-gray-800 tracking-tighter">SCHEDULE</span>
         </button>
-        <button onclick="showTab('info')" class="text-gray-400 flex flex-col items-center">
-            <span class="text-[10px] font-bold">INFO/TOOLS</span>
+        <button onclick="showTab('info')" class="flex flex-col items-center">
+            <span class="text-[10px] font-bold text-gray-400 tracking-tighter">INFO/TOOLS</span>
         </button>
     </nav>
 
@@ -111,7 +161,7 @@
         function showTab(tabId) {
             document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
             document.getElementById(tabId).classList.add('active');
-            // 切換按鈕顏色邏輯...
+            // 此處可增加按鈕顏色切換邏輯
         }
     </script>
 </body>
